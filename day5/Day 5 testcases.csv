@@ -1,0 +1,10 @@
+Test Case Id,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Leve,Remarks
+TC001,Validate product listing page,Open product page > Verify products,Products displayed correctly,Products displayed correctly,Passed,high,No issues found
+TC002,search Fuctionality,Test Search  > Check output,Result according to Search Query  ,Works as expected,Passed,high,No issues found
+TC003,Dynamic routing,Verify individual page > load correctly,Dynamic page should work properly,working properly,Passed,High,Works as expected
+TC004,Test API error handling,Disconnect API > Refresh page,Show fallback UI with error message,No issues found,Passed,Medium,Handled gracefully
+TC005,Check cart functionality,Add product to cart > Verify cart contents,Cart updates with added product,Cart updates as expected,Passed,High,Works as expected
+TC006,Ensure responsiveness on mobile,Resize browser window > Check layout,Layout adjusts properly to screen size,Responsive layout working as intended,Passed,Medium,Test successful
+TC007,Check out form Checking,Verified all fields ,Works as expected,Works as expected,Passed,Medium,Test successful
+TC008,Authentication Check,check user login and signup ,only authentic user can acces payment page,Handled gracefully,Passed,high,Test successful
+TC009,Filters,user selected filters > product display,user selected field working properly,all filters working properly,Passed,high,Works as expected
