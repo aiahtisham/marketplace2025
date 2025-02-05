@@ -3,7 +3,8 @@ import Image from "next/image";
 import { client } from "@/sanity/lib/client"; 
 import Link from "next/link";
 
-const ProductPage = async ({ params: { id } }: { params: { id: string } }) => {
+const ProductPage = async ({ params }: { params: { id: Promise<string> } }) => {
+  const id = await params.id
   try {
     const query = `*[_type == "product" && _id == $id] {
       "id": _id,
