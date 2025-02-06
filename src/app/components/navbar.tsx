@@ -5,15 +5,13 @@ import { BsPerson } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
-import { useClerk, useUser } from "@clerk/clerk-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
  
-  const { openSignIn, signOut } = useClerk();
-  const { isSignedIn } = useUser(); 
+  
 
   return (
     <header className="border-b mx-auto flex-col w-full h-58px gap-4">
@@ -43,21 +41,15 @@ export default function Navbar() {
           <BsPerson />
           
 
-          {isSignedIn ? (
+          
+        
+      
         <a
-          onClick={() => signOut()} 
-          className="ext-[14px] font-bold cursor-pointer"
-        >
-          Logout
-        </a>
-      ) : (
-        <a 
-          onClick={() => openSignIn()} 
           className="mr-4 text-[14px] font-bold cursor-pointer"
         >
           Login
         </a>
-      )}
+      
 
 
           <h1> /</h1>
